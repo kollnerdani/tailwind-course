@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+         font-family: "Quicksand", sans-serif;   
+    }
+    
+    h1 {
+        @apply text-6xl;
+    }
+    
+    h2 {
+        @apply text-5xl;
+    }
+    
+    h3 {
+        @apply text-4xl;
+    }
+    
+    h4 {
+        @apply text-3xl;
+    }
+    
+    h5 {
+        @apply text-2xl;
+    }
+   
+}
+
+@layer components {
+    .menu-item{
+        @apply relative flex h-full items-center p-4 cursor-pointer font-bold text-pink-200 transition-colors ease-in-out  hover:bg-white/10 hover:text-zinc-200
+    }
+}
